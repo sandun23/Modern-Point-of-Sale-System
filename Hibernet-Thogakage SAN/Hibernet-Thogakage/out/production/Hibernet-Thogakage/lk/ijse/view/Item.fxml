@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="407.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemController">
+   <children>
+      <Label layoutX="34.0" layoutY="24.0" prefHeight="43.0" prefWidth="169.0" text="|  ITEM   |">
+         <font>
+            <Font name="Serif Regular" size="38.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblItem" layoutX="33.0" layoutY="165.0" prefHeight="177.0" prefWidth="517.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Item Code" />
+            <TableColumn prefWidth="149.0" text="Item Name" />
+            <TableColumn prefWidth="140.0" text="QTY" />
+            <TableColumn prefWidth="151.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="255.0" layoutY="362.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #049b23;" text="ADD" textFill="WHITE" />
+      <TextField fx:id="textItemCode" layoutX="19.0" layoutY="115.0" prefHeight="25.0" prefWidth="106.0" promptText="Item Code" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemName" layoutX="151.0" layoutY="115.0" prefHeight="25.0" prefWidth="145.0" promptText="Item Name" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemQty" layoutX="314.0" layoutY="115.0" prefHeight="25.0" prefWidth="78.0" promptText="QTY" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemUnitPrice" layoutX="419.0" layoutY="115.0" prefHeight="25.0" prefWidth="145.0" promptText="Unit Price" styleClass="textField" stylesheets="@../css/Home.css" />
+      <Separator layoutX="6.0" layoutY="86.0" prefHeight="0.0" prefWidth="572.0" />
+      <JFXButton fx:id="btnDelete" layoutX="472.0" layoutY="362.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #049b23;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" layoutX="365.0" layoutY="362.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #049b23;" text="Update" textFill="WHITE" />
+      <TextField fx:id="textItemSearch" layoutX="336.0" layoutY="46.0" prefHeight="18.0" prefWidth="133.0" promptText="Item Search" styleClass="textField" stylesheets="@../css/Home.css" />
+      <JFXButton fx:id="btnSearch" layoutX="492.0" layoutY="46.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #049b23;" text="Search" textFill="WHITE" />
+   </children>
+</AnchorPane>
